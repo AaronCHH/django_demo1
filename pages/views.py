@@ -7,8 +7,8 @@ def home(request):
 
 
 def about(request):
-  my_name = 'Hello, my name is Aaron Hsu'
-  return render(request, 'about.html', {'my_name': my_name})
+  from pages.namer import namer
+  return render(request, 'about.html', {"my_stuff": namer()})
 
 
 def contact(request):
