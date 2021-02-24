@@ -1,11 +1,15 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 def home(request):
-    return render(request, 'home.html', {})
+  return render(request, 'home.html', {})
+
 
 def about(request):
-    return render(request, 'about.html', {})
+  my_name = 'Hello, my name is Aaron Hsu'
+  return render(request, 'about.html', {'my_name': my_name})
+
 
 def contact(request):
-    return render(request, 'contact.html', {})
+  return render(request, 'contact.html', {})
