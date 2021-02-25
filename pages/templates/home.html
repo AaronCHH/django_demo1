@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
   
 {% block title %}
 Welcome to AaronHsu.org
 {% endblock title %}
 
-<img src="" alt="" srcset="">
 
 {% block content  %}
 <br>
 Hello Django!
+<br>
+<img src="{% static 'images/dj.png ' %}" width="200"> 
+
 {% endblock content  %}
